@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Nova+Square&family=Silkscreen:wght@700&display=swap');
+
+
+*{
+    font-family: "Silkscreen";
+    width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+
+}
+
+body{
+    background: linear-gradient(45deg, #0F0F0F,#232D3F,#005B41,#008170);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-size: 300% 300%;
+    animation: colors 15s ease infinite;
+}
+
+@keyframes colors{
+    0%{
+        background-position: 0% 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+
+    100%{
+        background-position: 0% 50%;
+    }
+}
+
+
+
+.logo{
+    font-size: 40px;
+    max-width: 600px;
+    margin-bottom: 24px;
+    margin-top: 100px;
+    text-align: center;
+    font-family: "Silkscreen";
+    font-weight: bold;
+    color: #FFFF;
+    
+}
+
+.container-input{
+    max-width: 480px;
+    margin: 14px 0;
+    text-align: center;
+
+}
+
+.container-input span{
+    color: #ffffff;
+    font-size: 22px;
+    
+}
+
+.slider{
+    -webkit-appearance: none;
+    width: 100%;
+    background-color: #dfdfdf4b;
+    border-radius: 6px;
+    height: 18px;
+    outline: none;
+    margin-top: 8px;
+}
+
+.button-cta{
+    height: 40px;
+    background-color: #017453;
+    border-radius: 10px;
+    border: 0;
+    cursor: pointer;
+    margin-top: 40px;
+    color: #FFF;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: "Silkscreen";
+}
+
+.button-cta:hover{
+    background-color: #02b17f;
+}
+
+.container-password{
+    max-width: 480px;
+    margin: 14px 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.title{
+    text-align: center;
+    color: #FFF;
+    font-size: 28px;
+    margin-top: 24px;
+    margin-bottom: 8px;
+}
+
+.password{
+    height: 60px;
+    background-color: rgba(0,0,0,0.40);
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFF;
+    font-size: 20px;
+    border: 1px solid #25252b;
+    transition: transform 0.3s;
+}
+
+.password:hover{
+    transform: scale(1.05);
+}
+
+.tooltip{
+    color:#FFF;
+    position: relative;
+    top: 20px;
+    padding: 6px 8px;
+    background: rgb(15,15,15);
+    border-radius: 10px;
+    text-align: center;
+    font-size: 16px;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+.hide{
+    display: none;
+}
+
+
+.container-password:hover .tooltip{
+    visibility: visible;
+    bottom: 50px;
+    opacity: 1;
+
+}
