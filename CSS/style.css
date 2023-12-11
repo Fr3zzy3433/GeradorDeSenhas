@@ -34,9 +34,18 @@ body{
     }
 }
 
+@keyframes translateY {
+    from {
+      transform: translateY(0) scale(1);
+    }
+    to {
+      transform: translateY(-4px) scale(1.05);
+    }
+}
 
 
 .logo{
+    border: 3px solid #FFFF;
     font-size: 40px;
     max-width: 600px;
     margin-bottom: 24px;
@@ -85,6 +94,7 @@ body{
 }
 
 .button-cta:hover{
+    animation: translateY 1s infinite alternate;
     background-color: #02b17f;
 }
 
